@@ -68,6 +68,21 @@ class LoginScreen extends StatelessWidget {
               text: 'SIGN IN',
               onPressed: () {},
             ),
+            SizedBox(height: 20),
+            CustomText(
+              text: '--OR--',
+              alignment: Alignment.center,
+            ),
+            MaterialButton(
+              onPressed: () {},
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10)),
+              child: Row(
+                children: [
+                  
+                ],
+              ),
+            ),
           ],
         ),
       ),
