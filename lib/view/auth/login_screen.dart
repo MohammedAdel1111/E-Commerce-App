@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../constants.dart';
+
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
 
@@ -31,7 +33,7 @@ class LoginScreen extends StatelessWidget {
                 Text(
                   'Sign Up',
                   style: TextStyle(
-                    color: Color.fromRGBO(0, 197, 105, 1),
+                    color: primaryColor,
                     fontSize: 18,
                   ),
                 ),
