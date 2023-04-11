@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 import '../widgets/custom_button.dart';
+import '../widgets/custom_button_social.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/custom_text_form_field.dart';
 
@@ -73,15 +74,17 @@ class LoginScreen extends StatelessWidget {
               text: '--OR--',
               alignment: Alignment.center,
             ),
-            MaterialButton(
+            SizedBox(height: 20),
+            CustomButtonSocial(
+              text: 'Sign In With Facebook',
+              imageName: 'assets/facebook.png',
               onPressed: () {},
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)),
-              child: Row(
-                children: [
-                  
-                ],
-              ),
+            ),
+            SizedBox(height: 20),
+            CustomButtonSocial(
+              text: 'Sign In With Google',
+              imageName: 'assets/google.png',
+              onPressed: () {},
             ),
           ],
         ),
