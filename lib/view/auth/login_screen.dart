@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
+import '../widgets/custom_text.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -23,19 +24,14 @@ class LoginScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Welcome,',
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 30,
-                  ),
+                CustomText(
+                  text: 'Welcome,',
+                  fontSize: 30,
                 ),
-                Text(
-                  'Sign Up',
-                  style: TextStyle(
-                    color: primaryColor,
-                    fontSize: 18,
-                  ),
+                CustomText(
+                  text: 'Sign Up',
+                  fontSize: 18,
+                  color: primaryColor,
                 ),
               ],
             ),
