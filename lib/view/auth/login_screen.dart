@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../constants.dart';
 import '../widgets/custom_text.dart';
+import '../widgets/custom_text_form_field.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -34,6 +35,32 @@ class LoginScreen extends StatelessWidget {
                   color: primaryColor,
                 ),
               ],
+            ),
+            SizedBox(height: 10),
+            CustomText(
+              text: 'Sign in to Continue',
+              fontSize: 14,
+              color: Colors.grey,
+            ),
+            SizedBox(height: 30),
+            CustomTextFormField(
+              text: 'Email',
+              hintext: 'doula@gmail.com',
+              onSave: (value) {},
+              validator: (value) {},
+            ),
+            SizedBox(height: 40),
+            CustomTextFormField(
+              text: 'Password',
+              hintext: '*************',
+              onSave: (value) {},
+              validator: (value) {},
+            ),
+            SizedBox(height: 20),
+            CustomText(
+              text: 'Forget Password',
+              fontSize: 14,
+              alignment: Alignment.topRight,
             ),
           ],
         ),
