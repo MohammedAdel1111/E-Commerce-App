@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../constants.dart';
+import '../widgets/custom_button.dart';
 import '../widgets/custom_text.dart';
 import '../widgets/custom_text_form_field.dart';
 
@@ -58,9 +59,14 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 20),
             CustomText(
-              text: 'Forget Password',
+              text: 'Forget Password?',
               fontSize: 14,
               alignment: Alignment.topRight,
+            ),
+            SizedBox(height: 20),
+            CustomButton(
+              text: 'SIGN IN',
+              onPressed: () {},
             ),
           ],
         ),
